@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SEARCH</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <div>
+                <div id="rightNav">
+                    <a href="index.html">Go back to Google Search</a>
+                    <a href="images.html">Images</a>
+                </div>
+            </div>
+        </nav>
+        <div id="root">
+            <div id="main">
+                <div>
+                    <img
+                        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                        alt="Google">
+                    <h1>
+                        Advanced
+                    </h1>
+                </div>
+
+                <form action="https://www.google.com/search">
+                    <div id="multi_field">
+                        <label for="as_q">all these words</label>
+                        <div class="wrapper"><input class="text" type="text"
+                                name="as_q"></div>
+
+                        <label for="as_epq">this exact word or phrase</label>
+                        <div class="wrapper"><input class="text" type="text"
+                                name="as_epq"></div>
+
+                        <label for="as_oq">any of these words</label>
+                        <div class="wrapper"><input class="text" type="text"
+                                name="as_oq"></div>
+
+                        <label for="as_eq">none of these words</label>
+                        <div class="wrapper"><input class="text" type="text"
+                                name="as_eq"></div>
+                    </div>
+                    <div>
+                        <input id="submit" type="submit"
+                            value="Advanced Search">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </body>
+</html>
