@@ -67,8 +67,8 @@ form {
     border: 2px solid #DFE1E5;
     padding: 5px;
     border-radius: 100vh;
-    width: min(600px, calc(100vw - 43px));
-
+    width: min(600px, calc(100vw - 100px));
+    min-width: 400px;
 }
 
 .wrapper:hover {
