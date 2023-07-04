@@ -1,0 +1,33 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ endpoint }} Page - Encyclopedia
+{% endblock %}
+
+{% block body %}
+
+<h1>{{ endpoint }} Page</h1>
+
+{% comment %} {% if endpoint == 'edit' %}
+    <form action="{% url Url %}" method="POST">
+{% else %} {% endcomment %}
+    <form action="{% url endpoint %}" method="POST">
+{% comment %} {% endif %} {% endcomment %}
+
+    {% csrf_token %}
+    <div>
+        <label for="title">Page Title : </label>
+        <input type="text" name="title" placeholder="Enter the page title" value="{{ title }}">
+    </div>
+    {{ error|safe }}
+    <div>
+        <label for="md-content">Markdown Content</label>
+    </div>
+    <div>
+        <textarea name="md-content" placeholder="Enter Page Content in Markdown" >{{ content }}</textarea>
+    </div>
+    <div>
+        <input type="submit" value="Save">
+    </div>
+</form>
+{% endblock %}
